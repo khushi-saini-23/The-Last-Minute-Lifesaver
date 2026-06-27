@@ -1,0 +1,6 @@
+{
+  "name": "The Last-Minute Life Saver",
+  "description": "A comforting, cozy full-stack task companion styled like an indie pixel art study nook to help prioritize tasks with gentle support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

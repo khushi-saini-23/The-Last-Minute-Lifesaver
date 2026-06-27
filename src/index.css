@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=VT323&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Mono", "Comfortaa", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-retro: "VT323", monospace;
+
+  /* Custom Geometric Balance Cozy Palette */
+  --color-cozy-cream-base: #FDFCF0;
+  --color-cozy-cream-paper: #FFFFFF;
+  --color-cozy-brown-dark: #5C4033;
+  --color-cozy-brown-light: #8B6B58;
+  --color-cozy-pink-light: #FFF0F5;
+  --color-cozy-pink-dark: #F8C8DC;
+  --color-cozy-green-pastel: #A8E4A0;
+  --color-cozy-green-dark: #3E2B23;
+  --color-cozy-emerald: #A8E4A0;
+  --color-cozy-emerald-text: #5C4033;
+}
+
+/* Custom retro pixel border classes with Geometric Balance offset shadows */
+.pixel-border {
+  border: 4px solid var(--color-cozy-brown-dark);
+  box-shadow: 8px 8px 0px 0px var(--color-cozy-pink-dark);
+}
+
+.pixel-border-sm {
+  border: 2px solid var(--color-cozy-brown-dark);
+  box-shadow: 4px 4px 0px 0px var(--color-cozy-pink-dark);
+}
+
+.pixel-border-pink {
+  border: 4px solid var(--color-cozy-pink-dark);
+  box-shadow: 6px 6px 0px 0px var(--color-cozy-brown-dark);
+}
+
+/* Cozy animations for loaders and flowers */
+@keyframes sway {
+  0%, 100% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+}
+
+.animate-sway {
+  animation: sway 3s ease-in-out infinite;
+}
+
+/* Subtle page-load fade in */
+.cozy-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
